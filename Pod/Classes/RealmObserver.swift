@@ -65,7 +65,7 @@ class RealmObserver<Element>: ObserverType {
      - returns: AnyObserver, type erased observer
      */
     func asObserver() -> AnyObserver<Element> {
-        return AnyObserver(eventHandler: on)
+        AnyObserver(eventHandler: on)
     }
     
     deinit {
